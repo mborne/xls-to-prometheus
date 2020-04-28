@@ -1,0 +1,40 @@
+- targets:
+  - 'https://qtw-debug.quadtreeworld.net/'
+  labels:
+    service: qtw-debug
+    env: PROD
+    team: QTW-DEBUG
+
+
+- targets:
+  - 'https://www.quadtreeworld.net/'
+  labels:
+    service: qtw-home
+    env: PROD
+    team: QTW-SITE
+
+
+- targets:
+  - 'https://www.quadtreeworld.net/login'
+  labels:
+    service: qtw-login
+    env: PROD
+    team: QTW-SITE
+
+
+- targets:
+  - 'https://www.quadtreeworld.net/api/resource-type'
+  labels:
+    service: qtw-api-resource-types
+    env: PROD
+    team: QTW-SITE
+
+
+- targets:
+  - 'https://www.quadtreeworld.net/api/resource?type=dataset'
+  labels:
+    service: qtw-api-resources-by-type
+    env: PROD
+    team: QTW-SITE
+
+
