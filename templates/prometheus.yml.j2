@@ -2,7 +2,6 @@
   - '{{ record['URL']|safe }}'
   labels:
     service: {{ record['FONCTIONNALITE'] }}
-    env: PROD
+    env: {{ record['ZONE'] }}
     team: {{ record['PROJET'] }}
-
 
